@@ -1,0 +1,113 @@
+:root {
+    /* Fuentes */
+    --fuente-principal: 'Poppins', sans-serif;
+
+    /* Tamaño de Media Queries */
+    --telefono: 480px;
+    --tablet: 768px;
+    --desktop: 1024px;
+
+    /* Colores */
+    --primario: #84d9bc;
+    --secundario: #313c4e;
+    --secundario-opacity: rgb(57 70 89 / .7);
+    --negro: #000;
+    --blanco: #FFFFFF;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+[class*="wrapper"] {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 2rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.btn {
+    font-size: 2rem;
+    padding: 1.2rem 4rem;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s ease;
+    border: none;
+}
+
+
+.boton:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+        display: inline-block;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primario {
+    background-color: var(--primario);
+}
