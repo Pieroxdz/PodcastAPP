@@ -8,18 +8,18 @@
     background-position: center;
     padding: 5rem 0;
 
-    & .logo {
+    & .hero-logo {
         max-width: 20rem;
         margin: 0 auto;
     }
 
     @media (min-width: 768px) {
-        & .logo {
+        & .hero-logo {
             margin: 0;
         }
     }
 
-    & .hero_content{
+    & .hero-content{
         padding-top: 10rem;
         padding-bottom: 10rem;
 
@@ -44,7 +44,7 @@
     
     @media (min-width: 768px) {
         
-        & .hero_content{
+        & .hero-content{
             padding-top: 15rem
             padding-bottom: 15rem;
         }

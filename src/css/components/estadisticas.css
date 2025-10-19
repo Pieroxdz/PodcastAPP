@@ -1,0 +1,9 @@
+#estadisticas {
+    padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+    #estadisticas {
+        padding: 8rem 0;
+    }
+}

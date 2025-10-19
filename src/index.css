@@ -4,3 +4,7 @@
 
 /* POR SECCIONES O COMPONENTES */
 @import url(./css/components/hero.css);
+@import url(./css/components/podcast.css);
+@import url(./css/components/beneficios.css);
+@import url(./css/components/estadisticas.css);
+@import url(./css/components/planes.css);

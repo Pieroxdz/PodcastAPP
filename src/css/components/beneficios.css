@@ -1,0 +1,35 @@
+#beneficios {
+    background-color: var(--primario);
+    padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+    #beneficios {
+        padding: 8rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .beneficios_structure {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .beneficios-content {
+        grid-column: 1/4;
+    }
+
+    .beneficios-img {
+        grid-column: 4/6;
+    }
+}
+
+.beneficios-img {
+    transition: transform 350ms ease-in-out;
+}
+
+.beneficios-img:hover {
+    transform: rotate(8deg) scale(1.1);
+}

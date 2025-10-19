@@ -1,0 +1,19 @@
+#podcast {
+    padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+    #podcast {
+        padding: 8rem 0;
+    }
+}
+
+.podcast_structure {}
+
+@media (min-width: 768px) {
+    .podcast_structure {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
