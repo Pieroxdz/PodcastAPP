@@ -92,16 +92,21 @@ ul {
 }
 
 
-.boton:hover {
+.btn:hover {
     cursor: pointer;
     background-color: aquamarine;
 }
 
 @media (min-width: 768px) {
-    .boton {
+    .btn {
         width: auto;
         display: inline-block;
     }
+}
+
+.btn-primary{
+    background-color: var(--primario);
+    color: var(--negro)
 }
 
 .text-center {

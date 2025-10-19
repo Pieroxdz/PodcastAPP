@@ -1,0 +1,53 @@
+#hero {
+    background-image:
+        linear-gradient(var(--secundario-opacity) 0%,
+            var(--secundario-opacity) 100%),
+        url(../../assets/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+
+    & .logo {
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+        & .logo {
+            margin: 0;
+        }
+    }
+
+    & .hero_content{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        & h1{
+            color: var(--blanco);
+            font-size: 4.5rem;
+        }
+
+        @media (min-width: 768px) {
+            & h1{
+                font-size: 6rem;
+                max-width: 50%
+            }
+        }
+
+        @media (min-width: 1024px) {
+            & h1{
+                max-width: 40%
+            }
+        }
+    }
+    
+    @media (min-width: 768px) {
+        
+        & .hero_content{
+            padding-top: 15rem
+            padding-bottom: 15rem;
+        }
+    }
+}
+

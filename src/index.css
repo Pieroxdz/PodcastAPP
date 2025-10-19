@@ -1,0 +1,6 @@
+/* GLOBALES */
+@import url(./css/base/fonts.css);
+@import url(./css/base/global.css);
+
+/* POR SECCIONES O COMPONENTES */
+@import url(./css/components/hero.css);
