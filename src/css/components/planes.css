@@ -21,15 +21,82 @@
 @media (min-width: 768px) {
     .planes-list {
         flex-direction: row;
+        max-width: 80rem;
+        margin: 10rem auto 0 auto;
     }
 }
 
-.plan .negocio {
+.plan {
+    flex-grow: 1;
+    background-color: var(--blanco);
+    padding: 16rem 4rem 4rem 4rem;
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
+    border-bottom: 1px solid #e1e1e1;
+    transition: transform .3s;
+}
+
+@media (min-width: 768px) {
+    .plan {
+        border: none;
+    }
+}
+
+.plan:hover {
+    transform: scale(1.1);
+}
+
+.inicio {
+    background-image: url(../../assets/img/icono_inicio.svg);
+
+}
+
+.negocio {
+    background-image: url(../../assets/img/icono_negocio.svg);
+    background-color: var(--primario);
     order: -1;
 }
 
 @media (min-width: 768px) {
-    .plan .negocio {
+    .negocio {
         order: unset;
+        /* Solo aplica verticalmente */
+        margin-block: -5rem;
+        border-radius: 2rem;
+        /* Para alinear los iconos */
+        background-position: 50% 7rem;
+        padding-top: 21rem;
+        z-index: 100;
     }
+}
+
+.pro {
+    background-image: url(../../assets/img/icono_pro.svg);
+}
+
+.plan-precio {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.plan-listado {}
+
+
+.plan-listado li {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.plan-listado li:last-of-type {
+    margin-bottom: 0;
+}
+
+.btn-plan {
+    border: 2px solid var(--primario);
+    margin-top: 2rem;
+    display: block;
 }

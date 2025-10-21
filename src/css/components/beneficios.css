@@ -27,9 +27,13 @@
 }
 
 .beneficios-img {
+    margin-top: 2rem;
     transition: transform 350ms ease-in-out;
 }
 
-.beneficios-img:hover {
-    transform: rotate(8deg) scale(1.1);
+
+@media (min-width: 768px) {
+    .beneficios-img:hover {
+        transform: rotate(8deg) scale(1.1);
+    }
 }
